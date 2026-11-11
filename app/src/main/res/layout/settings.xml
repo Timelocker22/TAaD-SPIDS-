@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/surface"
+    xmlns:app="http://android.com"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- КНОПКА НАЗАД И ЗАГОЛОВОК -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <!-- Кастомная круглая кнопка назад -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow"
+            android:scaleType="centerInside"
+            android:padding="8dp"
+            android:background="@drawable/bg_button_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Настройки"
+            style="@style/Typography.Heading"
+            android:textColor="@color/text_light"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <!-- БЛОК: ЗВУКОВЫЕ ЭФФЕКТЫ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Звуковые эффекты"
+        android:textColor="@color/text_light"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/width_primary"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp">
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_volume"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:valueFrom="0"
+            android:valueTo="100"
+            android:value="70"
+            app:thumbColor="#FFFFFF"
+            app:trackColorActive="#FFFFFF"
+            app:trackColorInactive="#A0A0A0"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_mute"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mute"
+            android:scaleType="centerInside"
+            android:padding="0dp"
+            android:background="@drawable/bg_button_mute"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+
+    <!-- БЛОК: УВЕДОМЛЕНИЯ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Уведомления"
+        android:textColor="@color/text_light"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:thumbTint="@color/text"
+        app:trackTint="@color/accent_yellow"
+        android:checked="true"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- БЛОК: ТЕМА -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тема"
+        android:textColor="@color/text_light"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/width_primary"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <!-- Кнопка Светлая -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_theme_light"
+            android:layout_width="@dimen/width_chips"
+            android:layout_height="@dimen/height_compact"
+            android:background="@drawable/bg_button_primary"
+            android:text="Светлая"
+            android:textSize="24sp"
+            style="@style/Widget.AppCompat.Button"
+            android:textColor="@color/text"
+            app:backgroundTint="@null"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"/>
+
+        <!-- Кнопка Тёмная -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_theme_dark"
+            android:layout_width="@dimen/width_chips"
+            android:layout_height="@dimen/height_compact"
+            android:background="@drawable/bg_button_primary"
+            android:text="Тёмная"
+            android:textSize="24sp"
+            style="@style/Widget.AppCompat.Button"
+            android:textColor="@color/text"
+            app:backgroundTint="@null"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"/>
+    </LinearLayout>
+
+    <!-- БЛОК: ЯЗЫК -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Язык"
+        android:textColor="@color/text_light"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_select_language"
+        android:layout_width="@dimen/width_primary"
+        android:layout_height="@dimen/height_primary"
+        android:background="@drawable/bg_button_primary"
+        android:text="Выбор языка: Ru"
+        android:textColor="@color/text"
+        style="@style/Typography.Heading"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        app:backgroundTint="@null" />
+
+</LinearLayout>

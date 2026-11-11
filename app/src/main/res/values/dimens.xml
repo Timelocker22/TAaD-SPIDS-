@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Скругления углов (Corner Radii) -->
+    <dimen name="radius_fields_social">8dp</dimen>
+    <dimen name="radius_small_actions">8dp</dimen>
+    <dimen name="radius_compact_buttons">16dp</dimen>
+    <dimen name="radius_primary_buttons">20dp</dimen>
+
+    <!-- Высота компонентов (Высота чаще всего фиксируется, ширину обычно делают match_parent) -->
+    <dimen name="height_primary">76dp</dimen>
+    <dimen name="height_compact">43dp</dimen>
+    <dimen name="height_fields">40dp</dimen>
+    <dimen name="height_chips">47dp</dimen>
+
+    <!-- Полные размеры для фиксации (если необходимо) -->
+    <dimen name="width_primary">304dp</dimen>
+    <dimen name="width_compact">194dp</dimen>
+    <dimen name="width_fields">327dp</dimen>
+    <dimen name="width_chips">109dp</dimen>
+
+
+
+    <dimen name="width_input_field">327dp</dimen>
+    <dimen name="height_input_field">40dp</dimen>
+    <dimen name="radius_input_field">5dp</dimen>
+    <dimen name="radius_friend_id">20dp</dimen>
+</resources>

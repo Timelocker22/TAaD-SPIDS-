@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="accent_yellow">#FFDC8B</color>
+    <color name="surface">#E6E6E6</color>
+    <color name="text">#FFFFFF</color>
+    <color name="text_light">#202321</color>
+    <color name="surface_input">#FFFFFF</color>
+    <color name="neutral_black">#000000</color>
+    <color name="accent_orange">#DD5E19</color>
 </resources>

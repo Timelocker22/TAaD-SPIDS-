@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+
+    <!-- Полная заливка кнопки: теперь она оранжевая -->
+    <solid android:color="@color/accent_yellow" />
+
+    <!-- Скругление углов -->
+    <corners android:radius="@dimen/radius_primary_buttons" />
+
+</shape>

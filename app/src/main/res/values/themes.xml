@@ -1,9 +1,27 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.TrainingAppAndDuels" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <style name="Theme.TrainingAppAndDuels" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:fontFamily">sans-serif-medium</item> <!-- Или ваш кастомный шрифт -->
+    </style>
+    <style name="Typography.Heading" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:fontFamily">sans-serif-medium</item> <!-- Или ваш кастомный шрифт -->
     </style>
 
-    <style name="Theme.TrainingAppAndDuels" parent="Base.Theme.TrainingAppAndDuels" />
+    <style name="Typography.Subheading" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Typography.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Typography.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_light</item> <!-- Можно заменить на серый/второстепенный -->
+    </style>
 </resources>
